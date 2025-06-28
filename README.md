@@ -1,24 +1,47 @@
-# Full Stack AI Fianace Platform with Next JS, Supabase, Tailwind, Prisma, Inngest, ArcJet, Shadcn UI Tutorial 🔥🔥
-## https://youtu.be/egS6fnZAdzk
+# 💰 Wealth Tracker 
 
-<img width="1470" alt="Screenshot 2024-12-10 at 9 45 45 AM" src="https://github.com/user-attachments/assets/1bc50b85-b421-4122-8ba4-ae68b2b61432">
+A simple yet powerful **personal finance management web app** that helps users track expenses, manage income, and gain insights into their financial health. This app was built as part of an internship project using **modern full-stack tools** like Next.js, Prisma, Supabase, and Clerk.
 
-### Make sure to create a `.env` file with following variables -
+---
 
-```
-DATABASE_URL=
-DIRECT_URL=
+## 📌 Features
 
-NEXT_PUBLIC_CLERK_PUBLISHABLE_KEY=
-CLERK_SECRET_KEY=
-NEXT_PUBLIC_CLERK_SIGN_IN_URL=/sign-in
-NEXT_PUBLIC_CLERK_SIGN_UP_URL=/sign-up
-NEXT_PUBLIC_CLERK_AFTER_SIGN_IN_URL=/onboarding
-NEXT_PUBLIC_CLERK_AFTER_SIGN_UP_URL=/onboarding
+- 🔐 User Authentication (Clerk)
+- 📊 Track Incomes and Expenses
+- 💼 Manage Multiple Bank Accounts
+- 🗂 Categorize Transactions
+- 📅 Set Recurring Payments
+- 📷 OCR-based Receipt Scanning
+- 🌐 ₹ / $ Currency Toggle
+- 📈 Dashboard Overview with Recent Activity
 
-GEMINI_API_KEY=
+---
 
-RESEND_API_KEY=
+## 🛠️ Tech Stack
 
-ARCJET_KEY=
-```
+| Area               | Tool/Framework             |
+|--------------------|----------------------------|
+| Frontend           | Next.js (App Router)       |
+| UI Components      | TailwindCSS + ShadCN       |
+| Forms              | React Hook Form + Zod      |
+| Backend            | Prisma ORM                 |
+| Database           | Supabase (PostgreSQL)      |
+| Auth               | Clerk.dev                  |
+| State/Utils        | useFetch Hook, Context API |
+| Currency Toggle    | Context + Intl Formatting  |
+| Deploy             | Vercel (Recommended)       |
+
+---
+
+.
+├── app/                     # Routes (App Router)
+├── components/              # UI Components
+├── lib/                     # DB, utilities
+├── actions/                 # Server actions
+├── prisma/                  # Prisma schema
+├── hooks/                   # Custom React hooks
+├── public/                  # Static assets
+├── emails/                 # Email templates
+├── tailwind.config.js       # Tailwind config
+└── package.json
+
